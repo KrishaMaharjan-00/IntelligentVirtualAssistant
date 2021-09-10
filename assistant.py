@@ -27,7 +27,7 @@ from bs4 import BeautifulSoup
 
 
 
-dict = {'dad':'prettygal.krisha@gmail.com','college':'prettygal.krisha@gmail.com','krisha':'prettygal.krisha@gmail.com'}
+dict = {'dad':'dad@gmail.com','college':'college@gmail.com','krisha':'krisha@gmail.com'}
 
 
 engine = pyttsx3.init('sapi5')
@@ -70,7 +70,7 @@ def sendEmail(to,content):
     server = smtplib.SMTP('smtp.gmail.com',587) # create a SMTP object for connection with server
     server.ehlo()
     server.starttls() #TLS connection required by gmail
-    server.login('vindemo1230@gmail.com','vin.demo21')
+    server.login('vindemo@gmail.com','vin.demo')
     server.sendmail('sender@gmail.com',to,content) # from, to, content
 
 
